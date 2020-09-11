@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Starter</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="manifest" href="../manifest.json">
+    <!-- app support -->
+    <link rel="apple-touch-icon" href="">
+    <meta name="apple-mobile-web-status-bar" content="#124249">
+  </head>
+
+  <body>
+    <header>
+      <!-- Tab links -->
+      <nav >
+        <ul class="tab">
+          <li class="tablinks">GPS</a></li>
+          <li class="tablinks">Search by city</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<main>
+  
+      <!-- Tab content -->
+      <section class="tab-page container">
+        <article>
+          <header>
+            <h1>Get by GPS</h1>
+          </header>
+          <div class="text">
+            <h2 class="city-name">Loading...</h2>
+            <p class="temp"></p>
+            <span class="unit"></span>
+            <p class="description"></p>
+            <p class="min-max"></p>
+          </div>
+        </article>
+        
+      </section>
+
+      <section id="by-city" class="tab-page container">
+        <article>
+          <header>
+            <h1>Get weather by location</h1>
+            <form action="">
+              <input type="search" class="search" name="search-box" id="search-box" placeholder="Search for a city">
+              <input type="button" value="Search" class="btn">
+            </form>
+          </header>
+          <div class="text">
+            <h2 class="city-name"></h2>
+            <p class="temp"></p>
+            <span class="unit"></span>
+            <p class="description"></p>
+            <p class="min-max"></p>
+          </div>
+        </article>
+        
+      </section>
+</main>
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
